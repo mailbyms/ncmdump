@@ -1,5 +1,8 @@
 *.exe
 ncmdump
 
+Debug
+Release
+
 .vscode
 .idea

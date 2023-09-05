@@ -68,6 +68,24 @@ make win32
 
 使用 git 切换到 msvc 分支，使用 Visual Studio 打开 ncmdump.sln，编译即可
 
+##### 创建项目
+
+- 从已有代码创建项目，项目类型：“控制台应用程序项目”
+
+##### 项目属性
+
+- Windows SDK 版本，选中可用的
+- `C/C++` -> 附加包含目录，增加`$(ProjectDir)\taglib\include`
+- `链接器`
+  - -> 常规 -> 附加库目录，增加 `$(ProjectDir)\taglib\lib`
+  - -> 输入-> 附加依赖项，增加 `tab.lib`
+
+##### [todo] 
+
+- 代码的数组使用 new 改造后未释放
+
+  
+
 ## 使用
 
 1. 命令行下使用 `ncmdump [files]...`

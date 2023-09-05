@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{87C00714-6BA6-4C12-8566-F074E390CC54}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)\taglib\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(ProjectDir)\taglib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>tag.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="aes.cpp" />
+    <ClCompile Include="cJSON.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ncmcrypt.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aes.h" />
+    <ClInclude Include="base64.h" />
+    <ClInclude Include="cJSON.h" />
+    <ClInclude Include="ncmcrypt.h" />
+    <ClInclude Include="taglib\include\taglib\aifffile.h" />
+    <ClInclude Include="taglib\include\taglib\aiffproperties.h" />
+    <ClInclude Include="taglib\include\taglib\apefile.h" />
+    <ClInclude Include="taglib\include\taglib\apefooter.h" />
+    <ClInclude Include="taglib\include\taglib\apeitem.h" />
+    <ClInclude Include="taglib\include\taglib\apeproperties.h" />
+    <ClInclude Include="taglib\include\taglib\apetag.h" />
+    <ClInclude Include="taglib\include\taglib\asfattribute.h" />
+    <ClInclude Include="taglib\include\taglib\asffile.h" />
+    <ClInclude Include="taglib\include\taglib\asfpicture.h" />
+    <ClInclude Include="taglib\include\taglib\asfproperties.h" />
+    <ClInclude Include="taglib\include\taglib\asftag.h" />
+    <ClInclude Include="taglib\include\taglib\attachedpictureframe.h" />
+    <ClInclude Include="taglib\include\taglib\audioproperties.h" />
+    <ClInclude Include="taglib\include\taglib\chapterframe.h" />
+    <ClInclude Include="taglib\include\taglib\commentsframe.h" />
+    <ClInclude Include="taglib\include\taglib\eventtimingcodesframe.h" />
+    <ClInclude Include="taglib\include\taglib\fileref.h" />
+    <ClInclude Include="taglib\include\taglib\flacfile.h" />
+    <ClInclude Include="taglib\include\taglib\flacmetadatablock.h" />
+    <ClInclude Include="taglib\include\taglib\flacpicture.h" />
+    <ClInclude Include="taglib\include\taglib\flacproperties.h" />
+    <ClInclude Include="taglib\include\taglib\generalencapsulatedobjectframe.h" />
+    <ClInclude Include="taglib\include\taglib\id3v1genres.h" />
+    <ClInclude Include="taglib\include\taglib\id3v1tag.h" />
+    <ClInclude Include="taglib\include\taglib\id3v2.h" />
+    <ClInclude Include="taglib\include\taglib\id3v2extendedheader.h" />
+    <ClInclude Include="taglib\include\taglib\id3v2footer.h" />
+    <ClInclude Include="taglib\include\taglib\id3v2frame.h" />
+    <ClInclude Include="taglib\include\taglib\id3v2framefactory.h" />
+    <ClInclude Include="taglib\include\taglib\id3v2header.h" />
+    <ClInclude Include="taglib\include\taglib\id3v2synchdata.h" />
+    <ClInclude Include="taglib\include\taglib\id3v2tag.h" />
+    <ClInclude Include="taglib\include\taglib\infotag.h" />
+    <ClInclude Include="taglib\include\taglib\itfile.h" />
+    <ClInclude Include="taglib\include\taglib\itproperties.h" />
+    <ClInclude Include="taglib\include\taglib\modfile.h" />
+    <ClInclude Include="taglib\include\taglib\modfilebase.h" />
+    <ClInclude Include="taglib\include\taglib\modproperties.h" />
+    <ClInclude Include="taglib\include\taglib\modtag.h" />
+    <ClInclude Include="taglib\include\taglib\mp4atom.h" />
+    <ClInclude Include="taglib\include\taglib\mp4coverart.h" />
+    <ClInclude Include="taglib\include\taglib\mp4file.h" />
+    <ClInclude Include="taglib\include\taglib\mp4item.h" />
+    <ClInclude Include="taglib\include\taglib\mp4properties.h" />
+    <ClInclude Include="taglib\include\taglib\mp4tag.h" />
+    <ClInclude Include="taglib\include\taglib\mpcfile.h" />
+    <ClInclude Include="taglib\include\taglib\mpcproperties.h" />
+    <ClInclude Include="taglib\include\taglib\mpegfile.h" />
+    <ClInclude Include="taglib\include\taglib\mpegheader.h" />
+    <ClInclude Include="taglib\include\taglib\mpegproperties.h" />
+    <ClInclude Include="taglib\include\taglib\oggfile.h" />
+    <ClInclude Include="taglib\include\taglib\oggflacfile.h" />
+    <ClInclude Include="taglib\include\taglib\oggpage.h" />
+    <ClInclude Include="taglib\include\taglib\oggpageheader.h" />
+    <ClInclude Include="taglib\include\taglib\opusfile.h" />
+    <ClInclude Include="taglib\include\taglib\opusproperties.h" />
+    <ClInclude Include="taglib\include\taglib\ownershipframe.h" />
+    <ClInclude Include="taglib\include\taglib\podcastframe.h" />
+    <ClInclude Include="taglib\include\taglib\popularimeterframe.h" />
+    <ClInclude Include="taglib\include\taglib\privateframe.h" />
+    <ClInclude Include="taglib\include\taglib\relativevolumeframe.h" />
+    <ClInclude Include="taglib\include\taglib\rifffile.h" />
+    <ClInclude Include="taglib\include\taglib\s3mfile.h" />
+    <ClInclude Include="taglib\include\taglib\s3mproperties.h" />
+    <ClInclude Include="taglib\include\taglib\speexfile.h" />
+    <ClInclude Include="taglib\include\taglib\speexproperties.h" />
+    <ClInclude Include="taglib\include\taglib\synchronizedlyricsframe.h" />
+    <ClInclude Include="taglib\include\taglib\tableofcontentsframe.h" />
+    <ClInclude Include="taglib\include\taglib\tag.h" />
+    <ClInclude Include="taglib\include\taglib\taglib.h" />
+    <ClInclude Include="taglib\include\taglib\taglib_config.h" />
+    <ClInclude Include="taglib\include\taglib\taglib_export.h" />
+    <ClInclude Include="taglib\include\taglib\tag_c.h" />
+    <ClInclude Include="taglib\include\taglib\tbytevector.h" />
+    <ClInclude Include="taglib\include\taglib\tbytevectorlist.h" />
+    <ClInclude Include="taglib\include\taglib\tbytevectorstream.h" />
+    <ClInclude Include="taglib\include\taglib\tdebuglistener.h" />
+    <ClInclude Include="taglib\include\taglib\textidentificationframe.h" />
+    <ClInclude Include="taglib\include\taglib\tfile.h" />
+    <ClInclude Include="taglib\include\taglib\tfilestream.h" />
+    <ClInclude Include="taglib\include\taglib\tiostream.h" />
+    <ClInclude Include="taglib\include\taglib\tlist.h" />
+    <ClInclude Include="taglib\include\taglib\tmap.h" />
+    <ClInclude Include="taglib\include\taglib\tpropertymap.h" />
+    <ClInclude Include="taglib\include\taglib\trefcounter.h" />
+    <ClInclude Include="taglib\include\taglib\trueaudiofile.h" />
+    <ClInclude Include="taglib\include\taglib\trueaudioproperties.h" />
+    <ClInclude Include="taglib\include\taglib\tstring.h" />
+    <ClInclude Include="taglib\include\taglib\tstringlist.h" />
+    <ClInclude Include="taglib\include\taglib\uniquefileidentifierframe.h" />
+    <ClInclude Include="taglib\include\taglib\unknownframe.h" />
+    <ClInclude Include="taglib\include\taglib\unsynchronizedlyricsframe.h" />
+    <ClInclude Include="taglib\include\taglib\urllinkframe.h" />
+    <ClInclude Include="taglib\include\taglib\vorbisfile.h" />
+    <ClInclude Include="taglib\include\taglib\vorbisproperties.h" />
+    <ClInclude Include="taglib\include\taglib\wavfile.h" />
+    <ClInclude Include="taglib\include\taglib\wavpackfile.h" />
+    <ClInclude Include="taglib\include\taglib\wavpackproperties.h" />
+    <ClInclude Include="taglib\include\taglib\wavproperties.h" />
+    <ClInclude Include="taglib\include\taglib\xingheader.h" />
+    <ClInclude Include="taglib\include\taglib\xiphcomment.h" />
+    <ClInclude Include="taglib\include\taglib\xmfile.h" />
+    <ClInclude Include="taglib\include\taglib\xmproperties.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

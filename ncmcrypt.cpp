@@ -249,7 +249,7 @@ void NeteaseCrypt::Dump() {
 	n = 0x8000;
 	i = 0;
 
-	unsigned char buffer[n];
+	unsigned char *buffer = new unsigned char[n];
 
 	std::ofstream output;
 
@@ -314,7 +314,7 @@ NeteaseCrypt::NeteaseCrypt(std::string const& path) {
 		throw std::invalid_argument("broken ncm file");
 	}
 
-	char keydata[n];
+	char *keydata = new char[n];
 	read(keydata, n);
 
 	for (i = 0; i < n; i++) {
@@ -335,7 +335,7 @@ NeteaseCrypt::NeteaseCrypt(std::string const& path) {
 
 		mMetaData = NULL;
 	} else {
-		char modifyData[n];
+		char *modifyData = new char[n];
 		read(modifyData, n);
 
 		for (i = 0; i < n; i++) {

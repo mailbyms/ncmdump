@@ -1,12 +1,11 @@
-prefix=C:/taglib
-exec_prefix=C:/taglib
-libdir=C:/taglib/lib
-includedir=C:/taglib/include
-
+prefix=C:/Users/MIKE/CMakeBuilds/a746e048-0fa4-733d-8945-58ad20103076/install/x86-Debug
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
 
 Name: TagLib C Bindings
 Description: Audio meta-data library (C bindings)
 Requires: taglib
-Version: 1.12
-Libs: -LC:/taglib/lib -ltag_c
-Cflags: -IC:/taglib/include/taglib 
+Version: 1.13.1
+Libs: -L${libdir} -ltag_c
+Cflags: -I${includedir}/taglib

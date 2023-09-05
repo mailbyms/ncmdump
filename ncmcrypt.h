@@ -4,6 +4,7 @@
 #include "cJSON.h"
 
 #include <iostream>
+#include <string>
 #include <fstream>
 
 class NeteaseMusicMetadata {

@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cJSON.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ncmcrypt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cJSON.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ncmcrypt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\aifffile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\aiffproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\apefile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\apefooter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\apeitem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\apeproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\apetag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\asfattribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\asffile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\asfpicture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\asfproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\asftag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\attachedpictureframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\audioproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\chapterframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\commentsframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\eventtimingcodesframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\fileref.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\flacfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\flacmetadatablock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\flacpicture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\flacproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\generalencapsulatedobjectframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\id3v1genres.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\id3v1tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\id3v2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\id3v2extendedheader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\id3v2footer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\id3v2frame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\id3v2framefactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\id3v2header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\id3v2synchdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\id3v2tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\infotag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\itfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\itproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\modfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\modfilebase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\modproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\modtag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\mp4atom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\mp4coverart.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\mp4file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\mp4item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\mp4properties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\mp4tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\mpcfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\mpcproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\mpegfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\mpegheader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\mpegproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\oggfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\oggflacfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\oggpage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\oggpageheader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\opusfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\opusproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\ownershipframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\podcastframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\popularimeterframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\privateframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\relativevolumeframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\rifffile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\s3mfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\s3mproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\speexfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\speexproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\synchronizedlyricsframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\tableofcontentsframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\tag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\taglib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\taglib_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\taglib_export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\tag_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\tbytevector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\tbytevectorlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\tbytevectorstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\tdebuglistener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\textidentificationframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\tfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\tfilestream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\tiostream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\tlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\tmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\tpropertymap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\trefcounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\trueaudiofile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\trueaudioproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\tstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\tstringlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\uniquefileidentifierframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\unknownframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\unsynchronizedlyricsframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\urllinkframe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\vorbisfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\vorbisproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\wavfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\wavpackfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\wavpackproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\wavproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\xingheader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\xiphcomment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\xmfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="taglib\include\taglib\xmproperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
