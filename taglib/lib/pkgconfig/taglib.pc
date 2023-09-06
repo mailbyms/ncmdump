@@ -1,4 +1,4 @@
-prefix=C:/Users/MIKE/CMakeBuilds/a746e048-0fa4-733d-8945-58ad20103076/install/x86-Debug
+prefix=C:/Users/MIKE/CMakeBuilds/5257b2fd-bbdc-e735-87c1-b29eb5eba11b/install/x86-Release
 exec_prefix=${prefix}
 libdir=${prefix}/lib
 includedir=${prefix}/include

@@ -27,10 +27,10 @@ goto theend
   *       to allow for static, shared or debug builds.
   * It would be preferable if the top level CMakeLists.txt provided the library name during config. ??
 :doit
-if /i "%1#" == "--libs#"    echo -LC:/Users/MIKE/CMakeBuilds/a746e048-0fa4-733d-8945-58ad20103076/install/x86-Debug/lib -llibtag
-if /i "%1#" == "--cflags#"  echo -IC:/Users/MIKE/CMakeBuilds/a746e048-0fa4-733d-8945-58ad20103076/install/x86-Debug/include -IC:/Users/MIKE/CMakeBuilds/a746e048-0fa4-733d-8945-58ad20103076/install/x86-Debug/include/taglib
+if /i "%1#" == "--libs#"    echo -LC:/Users/MIKE/CMakeBuilds/5257b2fd-bbdc-e735-87c1-b29eb5eba11b/install/x86-Release/lib -llibtag
+if /i "%1#" == "--cflags#"  echo -IC:/Users/MIKE/CMakeBuilds/5257b2fd-bbdc-e735-87c1-b29eb5eba11b/install/x86-Release/include -IC:/Users/MIKE/CMakeBuilds/5257b2fd-bbdc-e735-87c1-b29eb5eba11b/install/x86-Release/include/taglib
 if /i "%1#" == "--version#" echo 1.13.1
-if /i "%1#" == "--prefix#"  echo C:/Users/MIKE/CMakeBuilds/a746e048-0fa4-733d-8945-58ad20103076/install/x86-Debug
+if /i "%1#" == "--prefix#"  echo C:/Users/MIKE/CMakeBuilds/5257b2fd-bbdc-e735-87c1-b29eb5eba11b/install/x86-Release
 
 :theend
 

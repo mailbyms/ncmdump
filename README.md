@@ -64,27 +64,36 @@ git clone https://github.com/taurusxin/ncmdump && cd ncmdump
 make win32
 ```
 
-#### Visual Studio
-
-使用 git 切换到 msvc 分支，使用 Visual Studio 打开 ncmdump.sln，编译即可
+#### Visual Studio 编译调试
 
 ##### 创建项目
 
-- 从已有代码创建项目，项目类型：“控制台应用程序项目”
+- visual studio 2017 从已有代码创建项目，项目类型：“控制台应用程序项目”
 
 ##### 项目属性
 
-- Windows SDK 版本，选中可用的
+- Windows SDK 版本，选中可用的（如 win
 - `C/C++` -> 附加包含目录，增加`$(ProjectDir)\taglib\include`
 - `链接器`
   - -> 常规 -> 附加库目录，增加 `$(ProjectDir)\taglib\lib`
-  - -> 输入-> 附加依赖项，增加 `tab.lib`
+  - -> 输入-> 附加依赖项，增加 `tag.lib`
 
-##### [todo] 
+##### 代码改造
 
-- 代码的数组使用 new 改造后未释放
+- 数组使用 new 改造，【todo】释放 new 的内存
 
-  
+
+##### taglib 库编译
+- 下载代码：https://github.com/taglib/taglib
+
+- visual studio 2017，
+  文件 -> 打开 -> cmake，选中项目的 CMakeList.txt
+
+  工具栏会显示默认的配置，下拉点击`管理配置`，会弹框，可将配置添加到 CMakeSettings，可以选择 x86/x64 的 Debug/Release
+
+  CMake 菜单 -> 仅生成 -> tag.lib；安装 -> tag.lib
+
+  注意 ncmdump 项目 debug 时需要 taglib 的 debug 的库，生成 release 可执行文件时需要 release 的 taglib 库
 
 ## 使用
 
